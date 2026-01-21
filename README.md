@@ -16,6 +16,11 @@
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+# 配置环境变量
+cp .env.example .env
+# 编辑 .env 填入你的 API_KEY
+
 python main.py
 ```
 
