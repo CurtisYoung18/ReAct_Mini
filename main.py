@@ -3,12 +3,13 @@
 ReAct Agent 入口文件
 演示 ReAct 架构的工作流程
 """
+import os
 from agent import ReActAgent, MultiAgentRouter
 
-# Kimi API 配置
-API_KEY = "sk-p5lZ0EOImGmlUDFz7LQLnYWwewgvZqFWM4JWCMQ7Z7wZiHPe"
-BASE_URL = "https://api.moonshot.cn/v1"
-MODEL = "moonshot-v1-8k"
+# LLM API 配置 - 从环境变量读取
+API_KEY = os.getenv("API_KEY", "")
+BASE_URL = os.getenv("BASE_URL", "https://api.minimax.chat/v1")
+MODEL = os.getenv("MODEL", "MiniMax-M2.1")
 
 
 def demo_single_agent():
