@@ -43,8 +43,8 @@ class ReActAgent:
     def __init__(
         self,
         api_key: str,
-        base_url: str = "https://api.moonshot.cn/v1",
-        model: str = "moonshot-v1-8k",
+        base_url: str = "https://api.minimax.chat/v1",
+        model: str = "MiniMax-M2.1",
         max_iterations: int = 10,
         verbose: bool = True
     ):
@@ -52,7 +52,7 @@ class ReActAgent:
         初始化 ReAct Agent
         
         Args:
-            api_key: Kimi API Key
+            api_key: MiniMax API Key
             base_url: API 基础 URL
             model: 模型名称
             max_iterations: 最大循环次数，防止无限循环
