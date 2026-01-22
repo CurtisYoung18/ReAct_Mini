@@ -39,3 +39,6 @@ python main.py
 3. 执行工具，将结果加入对话上下文
 4. LLM 继续推理，直到任务完成
 
+## 参考图
+![ReAct](https://github.com/user-attachments/assets/8b18875d-ea91-489c-9508-664a4ef0c6ab)
+
