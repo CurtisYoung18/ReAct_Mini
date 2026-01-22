@@ -4,7 +4,11 @@ ReAct Agent 入口文件
 演示 ReAct 架构的工作流程
 """
 import os
+from dotenv import load_dotenv
 from agent import ReActAgent, MultiAgentRouter
+
+# 加载 .env 文件
+load_dotenv()
 
 # LLM API 配置 - 从环境变量读取
 API_KEY = os.getenv("API_KEY", "")
